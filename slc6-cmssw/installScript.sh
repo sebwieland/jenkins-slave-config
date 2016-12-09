@@ -13,7 +13,7 @@ mkdir /home/jenkins/.ssh
 touch /home/jenkins/.ssh/authorized_keys
 exit
 # Back as root add authorized_keys
-cat $GITREPODIR/authorized_keys >> /home/jenkins/.ssh/authorized_keys
+cat $GITREPODIR/.ssh/authorized_keys >> /home/jenkins/.ssh/authorized_keys
 
 # Install java needed by Jenkins
 yum -y install java
