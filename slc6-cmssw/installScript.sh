@@ -4,15 +4,14 @@ export GITREPODIR=`pwd`
 
 # Add Jenkins user and create Jenkins workdir
 sudo adduser jenkins --shell /bin/bash
-su jenkins
-mkdir /home/jenkins/jenkins_slave
+mkdir /home/jenkins/jenkins_slave"
 chown jenkins:jenkins /home/jenkins/jenkins_slave
 
 # Add SSH public keys
 # First create file to keep file permissions properly
 mkdir /home/jenkins/.ssh
 touch /home/jenkins/.ssh/authorized_keys
-logout
+chown -R jenkins:jenkins /home/jenkins/jenkins_slave
 # Back as root add authorized_keys
 cat $GITREPODIR/.ssh/authorized_keys >> /home/jenkins/.ssh/authorized_keys
 
