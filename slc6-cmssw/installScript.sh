@@ -4,7 +4,7 @@ export GITREPODIR=`pwd`
 
 # Add Jenkins user and create Jenkins workdir
 sudo adduser jenkins --shell /bin/bash
-mkdir /home/jenkins/jenkins_slave"
+mkdir /home/jenkins/jenkins_slave
 chown jenkins:jenkins /home/jenkins/jenkins_slave
 
 # Add SSH public keys
