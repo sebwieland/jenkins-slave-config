@@ -6,6 +6,7 @@ export GITREPODIR=`pwd`
 sudo adduser jenkins --shell /bin/bash
 su jenkins
 mkdir /home/jenkins/jenkins_slave
+chown jenkins:jenkins /home/jenkins/jenkins_slave
 
 # Add SSH public keys
 # First create file to keep file permissions properly
