@@ -12,7 +12,7 @@ chown jenkins:jenkins /home/jenkins/jenkins_slave
 # First create file to keep file permissions properly
 mkdir /home/jenkins/.ssh
 touch /home/jenkins/.ssh/authorized_keys
-exit
+logout
 # Back as root add authorized_keys
 cat $GITREPODIR/.ssh/authorized_keys >> /home/jenkins/.ssh/authorized_keys
 
