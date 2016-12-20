@@ -28,5 +28,8 @@ yum -y install cvmfs cvmfs-config-default
 cvmfs_config setup
 # Copy default.local config to proper place
 cp $GITREPODIR/default.local /etc/cvmfs/default.local
+# Copy additional Configs to proper place
+cp $GITREPODIR/cms.cern.ch.local /etc/cvmfs/config.d
+cp $GITREPODIR/cern.ch.local /etc/cvmfs/domain.d
 # Check config
 cvmfs_config probe
