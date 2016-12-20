@@ -1,0 +1,5 @@
+# cvmfs cms.cern.ch.local file installed with puppet.
+# this files overrides and extends the values contained
+# within the cms.cern.ch.conf file.
+
+export CMS_LOCAL_SITE=T2_CH_CERN
